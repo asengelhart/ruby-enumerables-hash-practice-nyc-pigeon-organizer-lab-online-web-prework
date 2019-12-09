@@ -7,6 +7,7 @@ def nyc_pigeon_organizer(data)
         elsif memo[name][category] == nil 
           memo[name][category] = []
         else 
+          if entry.class 
           memo[name][category].push(entry)
         end 
       end 
