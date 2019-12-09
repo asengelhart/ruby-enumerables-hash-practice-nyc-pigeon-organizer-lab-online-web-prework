@@ -9,7 +9,6 @@ def nyc_pigeon_organizer(data)
           memo[name][category] = []
         end 
         memo[name][category].push(entry.to_s)
-        end 
       end 
     end
     memo
