@@ -4,11 +4,11 @@ def nyc_pigeon_organizer(data)
       name_array.each do |name|
         if memo[name] == nil 
           memo[name] = {}
-        else 
-          if memo[name][category] == nil 
-            memo[name][category] = []
-          end 
-          memo[name][category].push(entry.to_s)
+        end 
+        if memo[name][category] == nil 
+          memo[name][category] = []
+        end 
+        memo[name][category].push(entry.to_s)
         end 
       end 
     end
